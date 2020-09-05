@@ -27,7 +27,7 @@ jobs:
         IBM_PASSWORD_UK: ${{ secrets.IBM_PASSWORD_UK }}
       run: |
         cf login -a https://api.eu-gb.cf.cloud.ibm.com -u $IBM_ACCOUNT_UK << EOF
-        $IBM_PASSWORD
+        $IBM_PASSWORD_UK
         EOF
     - name: Get IBM Cloud Apps
       run: |
